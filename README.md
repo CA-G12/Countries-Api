@@ -3,8 +3,7 @@
 Our application is a site that brings you details of the country you are searching for
 
 # link
-
-https://github.com/CA-G12/Countries-Api.git
+https://ca-g12.github.io/Countries-Api/
 
 # problem
 
