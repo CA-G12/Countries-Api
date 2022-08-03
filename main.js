@@ -6,18 +6,18 @@ const fetch = (inp, cb) => {
     let url = `https://restcountries.com/v3.1/name/${inp.value}?fullText=true`;
     let xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            let data = JSON.parse(xhr.responseText);
-            console.log(data);
-            cb(data);
-
-            console.log(data[0]);
-            console.log(data[0].capital[0]);
-            console.log(data[0].flags.svg);
-            console.log(data[0].name.commom);
-            console.log(data[0].continents[0]);
-            console.log(Object.keys(data[0].currencies)[0]);
-            console.log(data[0].currencies[Object.keys(data[0].currencies)].name);
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+                let data = JSON.parse(xhr.responseText);
+                console.log(data);
+                cb(data);
+            } else {
+                res.textContent = ``
+                const divbig = document.createElement("div");
+                divbig.classList = "contA";
+                divbig.textContent = "Not found";
+                res.appendChild(divbig);
+            }
         }
     };
     xhr.open("GET", url);
