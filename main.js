@@ -9,7 +9,6 @@ const fetch = (inp, cb) => {
         if (xhr.readyState == 4) {
             if (xhr.status == 200) {
                 let data = JSON.parse(xhr.responseText);
-                console.log(data);
                 cb(data);
             } else {
                 res.textContent = ``
@@ -25,7 +24,6 @@ const fetch = (inp, cb) => {
 };
 const htm = (data) => {
     res.textContent = ``
-    console.log(data);
     let la = data[0].languages;
     const divbig = document.createElement("div")
     divbig.classList = "sa"
