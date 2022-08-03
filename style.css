@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.bored {
+  font-size: 20px;
+  font-weight: 300;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.sec1 {
+  background: url(./images/all\ countries.webp) no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sec1 .div1 {
+  padding: 20px;
+  width: 500px;
+  min-height: 150px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec1 .div1 h1 {
+  color: rgb(49, 22, 0);
+  font-size: 50px;
+  line-height: 0.9;
+  margin-bottom: 15px;
+}
+.sec1 .div1 p {
+  color: #fff;
+  font-size: 15px;
+  width: 500px;
+}
+.search {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.sec1 .div1 .submit {
+  font-size: 30px;
+  font-weight: 800;
+  padding: 0 45px;
+  border-radius: 10px;
+  color: rgb(43, 19, 0);
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+}
+.sec1 .div1 .submit:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #fff;
+}
+#result {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cont {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  min-width: 600px;
+  min-height: 150px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+}
