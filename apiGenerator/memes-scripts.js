@@ -16,7 +16,8 @@ function fetchMemes() {
             after = body.data.after;
             for (let i = 0; i < body.data.children.length; i++) {
                 if (body.data.children[i].data.post_hint === "image") {
-                    if (body.data.children[i].data.url !== "https://i.redd.it/e1snafuqggf91.jpg") {
+                    if (body.data.children[i].data.url !== "https://i.redd.it/e1snafuqggf91.jpg"
+                        && body.data.children[i].data.url !== "https://i.redd.it/t86wgg8rumf91.jpg") {
                         let div = document.createElement("div");
                         let image = document.createElement("img");
                         image.src = body.data.children[i].data.url_overridden_by_dest;
